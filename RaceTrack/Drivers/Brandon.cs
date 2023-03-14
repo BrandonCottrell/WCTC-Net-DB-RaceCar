@@ -7,18 +7,19 @@ using RaceTrack.RaceTrack.Cars;
 
 namespace RaceTrack.RaceTrack.Drivers
 {
-    public class SoccerMom : Driver
+    internal class Brandon : Driver
     {
-        public SoccerMom(RaceCar car) : base(car)
+        public Brandon(RaceCar car) : base(car)
         {
-            Name = "Soccer Mom";
-            SkillLevel = 6;
+            Name = "Brandon";
+            SkillLevel = 9;
         }
 
         public override void Drive()
         {
             Car.Accelerate(SkillLevel);
         }
+
 
     }
 }
